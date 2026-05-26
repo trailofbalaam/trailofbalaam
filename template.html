@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Bloody Trail — интерактивный рулбук в жанре урбан-фэнтези. Добро пожаловать на Кровавый Троп — дорогу, с которой нельзя свернуть.">
+    <meta property="og:title" content="Bloody Trail — Кровавый Троп">
+    <meta property="og:description"
+        content="Интерактивный рулбук в жанре урбан-фэнтези. Лондон, разорванный тьмой и чудовищами.">
+    <meta property="og:type" content="website">
+    <title>Bloody Trail</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <button id="scrollTopBtn" aria-label="Наверх">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M12 2L3 11h6v11h6V11h6L12 2z" fill="none" stroke="currentColor" stroke-width="1.00"
+                stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </button>
+
+    <header>
+        <h1><a href="index.html">Bloody Trail</a></h1>
+        <button class="menu-toggle" aria-label="Открыть меню" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="mainNav">
+            <a href="lore.html">Лор</a>
+            <div class="dropdown">
+                <a href="races.html" class="dropdown-toggle">Расы ▾</a>
+                <div class="dropdown-menu">
+                    <a href="vampires.html">Вампиры</a>
+                    <a href="mages.html">Маги</a>
+                    <a href="werewolves.html">Оборотни</a>
+                    <a href="fairies.html">Феи</a>
+                    <a href="humans-hunters.html">Люди и Охотники</a>
+                    <a href="spiritual-world.html">Духовный мир</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="breadcrumbs">
+        <a href="index.html">Главная</a><span>/</span><a
+            href="races.html">Расы</a><span>/</span><span>{{breadcrumb}}</span>
+    </div>
+
+    <main>
+        {{content}}
+    </main>
+
+    {{pagination}}
+
+    <footer>
+        <p>&copy; <span id="currentYear">2025</span> Bloody Trail Project</p>
+        <p class="age-warning">18+ Кровавый Троп не предназначен для несовершеннолетних</p>
+    </footer>
+
+    <script src="js/header-hide.js"></script>
+</body>
+
+</html>
