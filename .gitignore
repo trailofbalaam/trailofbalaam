@@ -1,1 +1,6 @@
-base.html
+node_modules/
+content/*.md
+test.html
+Thumbs.db
+.DS_Store
+*.log
